@@ -1,0 +1,4 @@
+nn1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2230 ansible_ssh_user='vagrant' ansible_ssh_private_key_file='/home/ravi/Documents/vag_hortonworks/.vagrant/machines/nn1/virtualbox/private_key'
+dn1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2231 ansible_ssh_user='vagrant' ansible_ssh_private_key_file='/home/ravi/Documents/vag_hortonworks/.vagrant/machines//dn1/virtualbox/private_key'
+dn2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2232 ansible_ssh_user='vagrant' ansible_ssh_private_key_file='/home/ravi/Documents/vag_hortonworks/.vagrant/machines/dn2/virtualbox/private_key'
+

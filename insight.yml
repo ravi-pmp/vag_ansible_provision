@@ -1,0 +1,12 @@
+---
+- name: insight client install and register
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: insight install
+      yum:
+        name: "insights-client.noarch"
+        state: latest
+
+    - name: register
+      command: "insights-client --register"

@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure ntpd is at the latest version
+      yum: pkg=chrony state=latest
+      notify:
+      - restart chronyd
+
+    - name: disble firewall
+      service: name=firewalld state=stopped enabled=false
+      notify: "restart firewall"
+
+    - name: disable selinux
+      selinux: state=disabled
+    
+  handlers:
+    - name: restart chronyd
+      service: name=chronyd state=restarted
+    - name: restart firewall
+      service: name=firewalld state=restarted
+

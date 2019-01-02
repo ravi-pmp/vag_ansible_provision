@@ -1,0 +1,10 @@
+---
+- name: install base
+  hosts: all
+  ignore_errors: yes
+  tasks:
+          #    - shell: 'subscription-manager remove --all'
+          #- shell: 'subscription-manager attach --auto'
+          #  - shell: 'subscription-manager repos --enable rhel-7-server-rpms --enable rhel-7-server-satellite-tools-6.3-rpms'
+    - command: ' yum install -y katello-agent'
+

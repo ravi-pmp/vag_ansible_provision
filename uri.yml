@@ -1,0 +1,14 @@
+---
+- name: insight client install and register
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: insight install
+      uri:
+        url: "http://www.google.com"
+        return_content: yes
+      register: webpage
+
+    - name: register
+      fail:
+      when: "'GOOGLE' not in webpage.content"

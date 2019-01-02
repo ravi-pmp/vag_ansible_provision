@@ -1,0 +1,3091 @@
+2018-07-09 16:50:26,426 p=7185 u=ravi |  nn1.ravi.local | FAILED | rc=-1 >>
+to use the 'ssh' connection type with passwords, you must install the sshpass program
+
+2018-07-09 16:50:26,427 p=7185 u=ravi |  dn2.ravi.local | FAILED | rc=-1 >>
+to use the 'ssh' connection type with passwords, you must install the sshpass program
+
+2018-07-09 16:50:26,427 p=7185 u=ravi |  dn1.ravi.local | FAILED | rc=-1 >>
+to use the 'ssh' connection type with passwords, you must install the sshpass program
+
+2018-07-09 16:50:43,252 p=7721 u=ravi |  dn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'dn1.ravi.local,172.16.4.148' (RSA) to the list of known hosts.\r\nvagrant@dn1.ravi.local: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-07-09 16:50:43,254 p=7721 u=ravi |  nn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'nn1.ravi.local,172.16.4.149' (RSA) to the list of known hosts.\r\nvagrant@nn1.ravi.local: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-07-09 16:50:43,257 p=7721 u=ravi |  dn2.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'dn2.ravi.local,172.16.4.150' (RSA) to the list of known hosts.\r\nvagrant@dn2.ravi.local: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-07-09 17:10:40,307 p=16272 u=ravi |  Using /home/ravi/Documents/vag_hortonworks/ansible.cfg as config file
+2018-07-09 17:10:40,470 p=16272 u=ravi |  PLAY [all] *********************************************************************
+2018-07-09 17:10:40,477 p=16272 u=ravi |  TASK [Gathering Facts] *********************************************************
+2018-07-09 17:10:41,795 p=16272 u=ravi |  ok: [dn1]
+2018-07-09 17:10:41,803 p=16272 u=ravi |  TASK [ensure ntpd is at the latest version] ************************************
+2018-07-09 17:10:57,581 p=16272 u=ravi |  fatal: [dn1]: FAILED! => {"changed": false, "msg": "No package matching 'ntp' found available, installed or updated", "rc": 126, "results": ["No package matching 'ntp' found available, installed or updated"]}
+2018-07-09 17:10:57,582 p=16272 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/playbook.retry
+
+2018-07-09 17:10:57,582 p=16272 u=ravi |  PLAY RECAP *********************************************************************
+2018-07-09 17:10:57,582 p=16272 u=ravi |  dn1                        : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-09 17:13:02,685 p=17295 u=ravi |  Using /home/ravi/Documents/vag_hortonworks/ansible.cfg as config file
+2018-07-09 17:13:02,867 p=17295 u=ravi |  PLAY [all] *********************************************************************
+2018-07-09 17:13:02,874 p=17295 u=ravi |  TASK [Gathering Facts] *********************************************************
+2018-07-09 17:13:04,520 p=17295 u=ravi |  ok: [dn2]
+2018-07-09 17:13:04,529 p=17295 u=ravi |  TASK [ensure ntpd is at the latest version] ************************************
+2018-07-09 17:13:14,169 p=17295 u=ravi |  fatal: [dn2]: FAILED! => {"changed": false, "msg": "No package matching 'ntp' found available, installed or updated", "rc": 126, "results": ["No package matching 'ntp' found available, installed or updated"]}
+2018-07-09 17:13:14,170 p=17295 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/playbook.retry
+
+2018-07-09 17:13:14,170 p=17295 u=ravi |  PLAY RECAP *********************************************************************
+2018-07-09 17:13:14,170 p=17295 u=ravi |  dn2                        : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-09 17:14:21,585 p=17462 u=ravi |  dn2 | FAILED | rc=2 >>
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destinationnon-zero return code
+
+2018-07-09 17:14:21,586 p=17462 u=ravi |  dn1 | FAILED | rc=2 >>
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destinationnon-zero return code
+
+2018-07-09 17:14:21,649 p=17462 u=ravi |  nn1 | FAILED | rc=2 >>
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destinationnon-zero return code
+
+2018-07-09 17:14:30,238 p=17515 u=ravi |  dn1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-07-09 17:14:30,252 p=17515 u=ravi |  nn1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-07-09 17:14:30,260 p=17515 u=ravi |  dn2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-07-09 17:14:42,298 p=17575 u=ravi |  dn1 | SUCCESS | rc=0 >>
+adjtime
+aliases
+aliases.db
+alternatives
+anacrontab
+audisp
+audit
+bash_completion.d
+bashrc
+binfmt.d
+chkconfig.d
+chrony.conf
+chrony.keys
+cron.d
+cron.daily
+cron.deny
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+crypttab
+csh.cshrc
+csh.login
+dbus-1
+default
+depmod.d
+dhcp
+DIR_COLORS
+DIR_COLORS.256color
+DIR_COLORS.lightbgcolor
+dracut.conf
+dracut.conf.d
+e2fsck.conf
+environment
+ethertypes
+exports
+favicon.png
+filesystems
+firewalld
+fstab
+fuse.conf
+gcrypt
+GeoIP.conf
+GeoIP.conf.default
+gnupg
+GREP_COLORS
+groff
+group
+group-
+grub2.cfg
+grub.d
+gshadow
+gshadow-
+gss
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+init.d
+inittab
+inputrc
+iproute2
+issue
+issue.net
+jwhois.conf
+kdump.conf
+kernel
+krb5.conf
+krb5.conf.d
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+libaudit.conf
+libnl
+libuser.conf
+locale.conf
+localtime
+login.defs
+logrotate.conf
+logrotate.d
+lvm
+machine-id
+magic
+makedumpfile.conf.sample
+man_db.conf
+mke2fs.conf
+modprobe.d
+modules-load.d
+motd
+mtab
+my.cnf
+my.cnf.d
+NetworkManager
+networks
+nsswitch.conf
+nsswitch.conf.bak
+openldap
+opt
+os-release
+pam.d
+passwd
+passwd-
+pkcs11
+pki
+plymouth
+pm
+polkit-1
+popt.d
+postfix
+ppp
+prelink.conf.d
+printcap
+profile
+profile.d
+protocols
+python
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rc.d
+rc.local
+redhat-release
+resolv.conf
+rhsm
+rpc
+rpm
+rsyncd.conf
+rsyslog.conf
+rsyslog.d
+rwtab
+rwtab.d
+sasl2
+securetty
+security
+selinux
+services
+sestatus.conf
+shadow
+shadow-
+shells
+skel
+ssh
+ssl
+statetab
+statetab.d
+subgid
+subuid
+sudo.conf
+sudoers
+sudoers.d
+sudo-ldap.conf
+sysconfig
+sysctl.conf
+sysctl.d
+systemd
+system-release
+system-release-cpe
+terminfo
+tmpfiles.d
+trusted-key.key
+tuned
+udev
+updatedb.conf
+vagrant_box_build_time
+vconsole.conf
+vimrc
+virc
+vmware-tools
+wgetrc
+wpa_supplicant
+X11
+xdg
+xinetd.d
+yum
+yum.conf
+yum.repos.d
+
+2018-07-09 17:14:42,301 p=17575 u=ravi |  nn1 | SUCCESS | rc=0 >>
+adjtime
+aliases
+aliases.db
+alternatives
+anacrontab
+audisp
+audit
+bash_completion.d
+bashrc
+binfmt.d
+chkconfig.d
+chrony.conf
+chrony.keys
+cron.d
+cron.daily
+cron.deny
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+crypttab
+csh.cshrc
+csh.login
+dbus-1
+default
+depmod.d
+dhcp
+DIR_COLORS
+DIR_COLORS.256color
+DIR_COLORS.lightbgcolor
+dracut.conf
+dracut.conf.d
+e2fsck.conf
+environment
+ethertypes
+exports
+favicon.png
+filesystems
+firewalld
+fstab
+fuse.conf
+gcrypt
+GeoIP.conf
+GeoIP.conf.default
+gnupg
+GREP_COLORS
+groff
+group
+group-
+grub2.cfg
+grub.d
+gshadow
+gshadow-
+gss
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+init.d
+inittab
+inputrc
+iproute2
+issue
+issue.net
+jwhois.conf
+kdump.conf
+kernel
+krb5.conf
+krb5.conf.d
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+libaudit.conf
+libnl
+libuser.conf
+locale.conf
+localtime
+login.defs
+logrotate.conf
+logrotate.d
+lvm
+machine-id
+magic
+makedumpfile.conf.sample
+man_db.conf
+mke2fs.conf
+modprobe.d
+modules-load.d
+motd
+mtab
+my.cnf
+my.cnf.d
+NetworkManager
+networks
+nsswitch.conf
+nsswitch.conf.bak
+openldap
+opt
+os-release
+pam.d
+passwd
+passwd-
+pkcs11
+pki
+plymouth
+pm
+polkit-1
+popt.d
+postfix
+ppp
+prelink.conf.d
+printcap
+profile
+profile.d
+protocols
+python
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rc.d
+rc.local
+redhat-release
+resolv.conf
+rhsm
+rpc
+rpm
+rsyncd.conf
+rsyslog.conf
+rsyslog.d
+rwtab
+rwtab.d
+sasl2
+securetty
+security
+selinux
+services
+sestatus.conf
+shadow
+shadow-
+shells
+skel
+ssh
+ssl
+statetab
+statetab.d
+subgid
+subuid
+sudo.conf
+sudoers
+sudoers.d
+sudo-ldap.conf
+sysconfig
+sysctl.conf
+sysctl.d
+systemd
+system-release
+system-release-cpe
+terminfo
+tmpfiles.d
+trusted-key.key
+tuned
+udev
+updatedb.conf
+vagrant_box_build_time
+vconsole.conf
+vimrc
+virc
+vmware-tools
+wgetrc
+wpa_supplicant
+X11
+xdg
+xinetd.d
+yum
+yum.conf
+yum.repos.d
+
+2018-07-09 17:14:42,329 p=17575 u=ravi |  dn2 | SUCCESS | rc=0 >>
+adjtime
+aliases
+aliases.db
+alternatives
+anacrontab
+audisp
+audit
+bash_completion.d
+bashrc
+binfmt.d
+chkconfig.d
+chrony.conf
+chrony.keys
+cron.d
+cron.daily
+cron.deny
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+crypttab
+csh.cshrc
+csh.login
+dbus-1
+default
+depmod.d
+dhcp
+DIR_COLORS
+DIR_COLORS.256color
+DIR_COLORS.lightbgcolor
+dracut.conf
+dracut.conf.d
+e2fsck.conf
+environment
+ethertypes
+exports
+favicon.png
+filesystems
+firewalld
+fstab
+fuse.conf
+gcrypt
+GeoIP.conf
+GeoIP.conf.default
+gnupg
+GREP_COLORS
+groff
+group
+group-
+grub2.cfg
+grub.d
+gshadow
+gshadow-
+gss
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+init.d
+inittab
+inputrc
+iproute2
+issue
+issue.net
+jwhois.conf
+kdump.conf
+kernel
+krb5.conf
+krb5.conf.d
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+libaudit.conf
+libnl
+libuser.conf
+locale.conf
+localtime
+login.defs
+logrotate.conf
+logrotate.d
+lvm
+machine-id
+magic
+makedumpfile.conf.sample
+man_db.conf
+mke2fs.conf
+modprobe.d
+modules-load.d
+motd
+mtab
+my.cnf
+my.cnf.d
+NetworkManager
+networks
+nsswitch.conf
+nsswitch.conf.bak
+openldap
+opt
+os-release
+pam.d
+passwd
+passwd-
+pkcs11
+pki
+plymouth
+pm
+polkit-1
+popt.d
+postfix
+ppp
+prelink.conf.d
+printcap
+profile
+profile.d
+protocols
+python
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rc.d
+rc.local
+redhat-release
+resolv.conf
+rhsm
+rpc
+rpm
+rsyncd.conf
+rsyslog.conf
+rsyslog.d
+rwtab
+rwtab.d
+sasl2
+securetty
+security
+selinux
+services
+sestatus.conf
+shadow
+shadow-
+shells
+skel
+ssh
+ssl
+statetab
+statetab.d
+subgid
+subuid
+sudo.conf
+sudoers
+sudoers.d
+sudo-ldap.conf
+sysconfig
+sysctl.conf
+sysctl.d
+systemd
+system-release
+system-release-cpe
+terminfo
+tmpfiles.d
+trusted-key.key
+tuned
+udev
+updatedb.conf
+vagrant_box_build_time
+vconsole.conf
+vimrc
+virc
+vmware-tools
+wgetrc
+wpa_supplicant
+X11
+xdg
+xinetd.d
+yum
+yum.conf
+yum.repos.d
+
+2018-07-09 17:14:56,189 p=17622 u=ravi |  nn1 | SUCCESS | rc=0 >>
+root:!!$6$62v3MmqE$GAJ8pQw8IGyg8jTsk/m/smqkZsyoj1dOkoonW9rPn/Vv2HRq/q/AFkXsF8wOP8tIaOnLnZIw4SFkLUXLybmoG.:17703:0:99999:7:::
+bin:*:17492:0:99999:7:::
+daemon:*:17492:0:99999:7:::
+adm:*:17492:0:99999:7:::
+lp:*:17492:0:99999:7:::
+sync:*:17492:0:99999:7:::
+shutdown:*:17492:0:99999:7:::
+halt:*:17492:0:99999:7:::
+mail:*:17492:0:99999:7:::
+operator:*:17492:0:99999:7:::
+games:*:17492:0:99999:7:::
+ftp:*:17492:0:99999:7:::
+nobody:*:17492:0:99999:7:::
+systemd-network:!!:17703::::::
+dbus:!!:17703::::::
+polkitd:!!:17703::::::
+postfix:!!:17703::::::
+sshd:!!:17703::::::
+chrony:!!:17703::::::
+vagrant:$6$QLCrQzDB$257yCl27X5XgprCwHBlF98LnNzbmjF418XeRkMGJKIy5Mi6cyK2jm5nnj8R1WdclAcL0qkmTTvj2z0FK1ygg60:17703:0:99999:7:::
+mysql:!!:17703::::::
+memcached:!!:17703::::::
+clamav:!!:17703:0:99999:7:::
+
+2018-07-09 17:14:56,193 p=17622 u=ravi |  dn1 | SUCCESS | rc=0 >>
+root:!!$6$62v3MmqE$GAJ8pQw8IGyg8jTsk/m/smqkZsyoj1dOkoonW9rPn/Vv2HRq/q/AFkXsF8wOP8tIaOnLnZIw4SFkLUXLybmoG.:17703:0:99999:7:::
+bin:*:17492:0:99999:7:::
+daemon:*:17492:0:99999:7:::
+adm:*:17492:0:99999:7:::
+lp:*:17492:0:99999:7:::
+sync:*:17492:0:99999:7:::
+shutdown:*:17492:0:99999:7:::
+halt:*:17492:0:99999:7:::
+mail:*:17492:0:99999:7:::
+operator:*:17492:0:99999:7:::
+games:*:17492:0:99999:7:::
+ftp:*:17492:0:99999:7:::
+nobody:*:17492:0:99999:7:::
+systemd-network:!!:17703::::::
+dbus:!!:17703::::::
+polkitd:!!:17703::::::
+postfix:!!:17703::::::
+sshd:!!:17703::::::
+chrony:!!:17703::::::
+vagrant:$6$QLCrQzDB$257yCl27X5XgprCwHBlF98LnNzbmjF418XeRkMGJKIy5Mi6cyK2jm5nnj8R1WdclAcL0qkmTTvj2z0FK1ygg60:17703:0:99999:7:::
+mysql:!!:17703::::::
+memcached:!!:17703::::::
+clamav:!!:17703:0:99999:7:::
+
+2018-07-09 17:14:56,196 p=17622 u=ravi |  dn2 | SUCCESS | rc=0 >>
+root:!!$6$62v3MmqE$GAJ8pQw8IGyg8jTsk/m/smqkZsyoj1dOkoonW9rPn/Vv2HRq/q/AFkXsF8wOP8tIaOnLnZIw4SFkLUXLybmoG.:17703:0:99999:7:::
+bin:*:17492:0:99999:7:::
+daemon:*:17492:0:99999:7:::
+adm:*:17492:0:99999:7:::
+lp:*:17492:0:99999:7:::
+sync:*:17492:0:99999:7:::
+shutdown:*:17492:0:99999:7:::
+halt:*:17492:0:99999:7:::
+mail:*:17492:0:99999:7:::
+operator:*:17492:0:99999:7:::
+games:*:17492:0:99999:7:::
+ftp:*:17492:0:99999:7:::
+nobody:*:17492:0:99999:7:::
+systemd-network:!!:17703::::::
+dbus:!!:17703::::::
+polkitd:!!:17703::::::
+postfix:!!:17703::::::
+sshd:!!:17703::::::
+chrony:!!:17703::::::
+vagrant:$6$QLCrQzDB$257yCl27X5XgprCwHBlF98LnNzbmjF418XeRkMGJKIy5Mi6cyK2jm5nnj8R1WdclAcL0qkmTTvj2z0FK1ygg60:17703:0:99999:7:::
+mysql:!!:17703::::::
+memcached:!!:17703::::::
+clamav:!!:17703:0:99999:7:::
+
+2018-07-09 17:15:42,330 p=17719 u=ravi |  nn1 | SUCCESS | rc=0 >>
+127.0.0.1	nn1.ravi.local	nn1
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+127.0.0.1 magma.builder
+
+2018-07-09 17:18:12,478 p=18152 u=ravi |  dn2 | SUCCESS | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:a2:5f:1a brd ff:ff:ff:ff:ff:ff
+    inet 172.16.4.153/24 brd 172.16.4.255 scope global noprefixroute dynamic eth0
+       valid_lft 1486sec preferred_lft 1486sec
+
+2018-07-09 17:18:12,509 p=18152 u=ravi |  dn1 | SUCCESS | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:8a:8b:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.4.152/24 brd 172.16.4.255 scope global noprefixroute dynamic eth0
+       valid_lft 1477sec preferred_lft 1477sec
+
+2018-07-09 17:18:12,517 p=18152 u=ravi |  nn1 | SUCCESS | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:be:40:35 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.4.151/24 brd 172.16.4.255 scope global noprefixroute dynamic eth0
+       valid_lft 1478sec preferred_lft 1478sec
+
+2018-07-09 17:29:26,788 p=19320 u=ravi |  playbook: hostfile.yml
+2018-07-09 17:29:46,579 p=19350 u=ravi |  PLAY [hostfile modification] *********************************************************************************************
+2018-07-09 17:29:46,589 p=19350 u=ravi |  TASK [host file addendum] ************************************************************************************************
+2018-07-09 17:29:47,486 p=19350 u=ravi |  changed: [dn1]
+2018-07-09 17:29:47,508 p=19350 u=ravi |  changed: [dn2]
+2018-07-09 17:29:47,533 p=19350 u=ravi |  changed: [nn1]
+2018-07-09 17:29:47,534 p=19350 u=ravi |  PLAY RECAP ***************************************************************************************************************
+2018-07-09 17:29:47,534 p=19350 u=ravi |  dn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:29:47,535 p=19350 u=ravi |  dn2                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:29:47,535 p=19350 u=ravi |  nn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:31:34,494 p=19471 u=ravi |  PLAY [hostfile modification] *********************************************************************************************
+2018-07-09 17:31:34,501 p=19471 u=ravi |  TASK [host file addendum] ************************************************************************************************
+2018-07-09 17:31:35,410 p=19471 u=ravi |  changed: [dn1]
+2018-07-09 17:31:35,434 p=19471 u=ravi |  changed: [nn1]
+2018-07-09 17:31:35,453 p=19471 u=ravi |  changed: [dn2]
+2018-07-09 17:31:35,455 p=19471 u=ravi |  PLAY RECAP ***************************************************************************************************************
+2018-07-09 17:31:35,455 p=19471 u=ravi |  dn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:31:35,455 p=19471 u=ravi |  dn2                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:31:35,455 p=19471 u=ravi |  nn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:32:13,754 p=19591 u=ravi |   [WARNING]: Consider using the yum, dnf or zypper module rather than running rpm.  If you need to use command because
+yum, dnf or zypper is insufficient you can add warn=False to this command task or set command_warnings=False in
+ansible.cfg to get rid of this message.
+
+2018-07-09 17:32:13,754 p=19591 u=ravi |  dn2 | SUCCESS | rc=0 >>
+Retrieving http://satellite.ravi.local/pub/katello-ca-consumer-latest.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+katello-ca-consumer-satellite.ravi.loc########################################
+
+2018-07-09 17:32:13,769 p=19591 u=ravi |  dn1 | SUCCESS | rc=0 >>
+Retrieving http://satellite.ravi.local/pub/katello-ca-consumer-latest.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+katello-ca-consumer-satellite.ravi.loc########################################
+
+2018-07-09 17:32:14,001 p=19591 u=ravi |  nn1 | SUCCESS | rc=0 >>
+Retrieving http://satellite.ravi.local/pub/katello-ca-consumer-latest.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+katello-ca-consumer-satellite.ravi.loc########################################
+
+2018-07-09 17:32:53,714 p=19658 u=ravi |  dn2 | SUCCESS | rc=0 >>
+The system has been registered with ID: d5657d9b-c387-48e8-aa44-c28c834394a9
+The registered system name is: dn2.ravi.local
+Installed Product Current Status:
+Product Name: Red Hat Enterprise Linux Server
+Status:       Subscribed
+
+2018-07-09 17:32:55,750 p=19658 u=ravi |  nn1 | SUCCESS | rc=0 >>
+The system has been registered with ID: 10cdfd40-d683-46c7-8f52-95a6370f6630
+The registered system name is: nn1.ravi.local
+Installed Product Current Status:
+Product Name: Red Hat Enterprise Linux Server
+Status:       Subscribed
+
+2018-07-09 17:32:56,288 p=19658 u=ravi |  dn1 | SUCCESS | rc=0 >>
+The system has been registered with ID: 07a339b1-a86b-46d2-80fc-4415b86b1cb7
+The registered system name is: dn1.ravi.local
+Installed Product Current Status:
+Product Name: Red Hat Enterprise Linux Server
+Status:       Subscribed
+
+2018-07-09 17:33:28,013 p=19755 u=ravi |  ERROR! failed at splitting arguments, either an unbalanced jinja2 block or quotes: subscription-manager register --org="subscription-manager list --consumed
+2018-07-09 17:33:44,633 p=19773 u=ravi |  dn2 | SUCCESS | rc=0 >>
++-------------------------------------------+
+   Consumed Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Enterprise Linux for SAP Hana
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Workstation)
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Enterprise Linux Server
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Enterprise Linux for SAP
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Directory Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Certification (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     RHEL for SAP Applications for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     RHEL for SAP Applications for System Z
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for Power BE
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Ansible Engine
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Container Images
+                     MRG Realtime
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     RHEL for SAP - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Certificate System
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     dotNET on RHEL Beta (for RHEL Server)
+                     dotNET on RHEL (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+SKU:                 RH3387200
+Contract:            11660497
+Account:             6091552
+Serial:              8276702629638297818
+Pool ID:             2c908401643b3d4a01643b48d546172d
+Provides Management: No
+Active:              True
+Quantity Used:       1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Status Details:      Subscription is current
+Subscription Type:   Standard
+Starts:              18/04/2018
+Ends:                18/04/2019
+System Type:         Physical
+
+2018-07-09 17:33:44,681 p=19773 u=ravi |  dn1 | SUCCESS | rc=0 >>
++-------------------------------------------+
+   Consumed Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Enterprise Linux for SAP Hana
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Workstation)
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Enterprise Linux Server
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Enterprise Linux for SAP
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Directory Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Certification (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     RHEL for SAP Applications for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     RHEL for SAP Applications for System Z
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for Power BE
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Ansible Engine
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Container Images
+                     MRG Realtime
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     RHEL for SAP - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Certificate System
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     dotNET on RHEL Beta (for RHEL Server)
+                     dotNET on RHEL (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+SKU:                 RH3387200
+Contract:            11660497
+Account:             6091552
+Serial:              543705224986133075
+Pool ID:             2c908401643b3d4a01643b48d546172d
+Provides Management: No
+Active:              True
+Quantity Used:       1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Status Details:      Subscription is current
+Subscription Type:   Standard
+Starts:              18/04/2018
+Ends:                18/04/2019
+System Type:         Physical
+
+2018-07-09 17:33:44,729 p=19773 u=ravi |  nn1 | SUCCESS | rc=0 >>
++-------------------------------------------+
+   Consumed Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Enterprise Linux for SAP Hana
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Workstation)
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     Red Hat Enterprise Linux for IBM z Systems
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Enterprise Linux Server
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Enterprise Linux for SAP
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Directory Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Certification (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     RHEL for SAP Applications for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     RHEL for SAP Applications for System Z
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for Power BE
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Ansible Engine
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Container Images
+                     MRG Realtime
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     RHEL for SAP - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Certificate System
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     dotNET on RHEL Beta (for RHEL Server)
+                     dotNET on RHEL (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+SKU:                 RH3387200
+Contract:            11660497
+Account:             6091552
+Serial:              5103625042585255373
+Pool ID:             2c908401643b3d4a01643b48d546172d
+Provides Management: No
+Active:              True
+Quantity Used:       1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Status Details:      Subscription is current
+Subscription Type:   Standard
+Starts:              18/04/2018
+Ends:                18/04/2019
+System Type:         Physical
+
+2018-07-09 17:34:03,578 p=19820 u=ravi |  dn1 | SUCCESS | rc=0 >>
++-------------------------------------------+
+    Available Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     dotNET on RHEL Beta (for RHEL Server)
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     RHEL for SAP Applications for Power BE
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Certification (for RHEL Server)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux for SAP
+                     MRG Realtime
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Container Images
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Certificate System
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Directory Server
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for System Z
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM z Systems
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     RHEL for SAP Applications for Power LE EUS
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     RHEL for SAP - Extended Update Support
+                     Oracle Java (for RHEL Workstation)
+                     Red Hat Enterprise Linux for SAP Hana
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     dotNET on RHEL (for RHEL Server)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Ansible Engine
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+SKU:                 RH3387200
+Contract:            11660497
+Pool ID:             2c908401643b3d4a01643b48d5861741
+Provides Management: No
+Available:           500
+Suggested:           1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Subscription Type:   Standard (Temporary)
+Ends:                18/04/2019
+System Type:         Virtual
+
+2018-07-09 17:34:03,718 p=19820 u=ravi |  dn2 | SUCCESS | rc=0 >>
++-------------------------------------------+
+    Available Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     dotNET on RHEL Beta (for RHEL Server)
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     RHEL for SAP Applications for Power BE
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Certification (for RHEL Server)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux for SAP
+                     MRG Realtime
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Container Images
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Certificate System
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Directory Server
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for System Z
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM z Systems
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     RHEL for SAP Applications for Power LE EUS
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     RHEL for SAP - Extended Update Support
+                     Oracle Java (for RHEL Workstation)
+                     Red Hat Enterprise Linux for SAP Hana
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     dotNET on RHEL (for RHEL Server)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Ansible Engine
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+SKU:                 RH3387200
+Contract:            11660497
+Pool ID:             2c908401643b3d4a01643b48d5861741
+Provides Management: No
+Available:           500
+Suggested:           1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Subscription Type:   Standard (Temporary)
+Ends:                18/04/2019
+System Type:         Virtual
+
+2018-07-09 17:34:03,765 p=19820 u=ravi |  nn1 | SUCCESS | rc=0 >>
++-------------------------------------------+
+    Available Subscriptions
++-------------------------------------------+
+Subscription Name:   Red Hat Enterprise Linux, Self-Support (128 Sockets, NFR, Partner Only)
+Provides:            Oracle Java (for RHEL Client)
+                     Oracle Java (for RHEL Server) - AUS
+                     Red Hat Developer Tools Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER) - Extended Update Support
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux High Availability (for IBM z Systems)
+                     Red Hat Enterprise Linux for Power, little endian
+                     Red Hat EUCJP Support (for RHEL Server)
+                     Red Hat Enterprise Linux for Power, big endian - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for ARM)
+                     Oracle Java (for RHEL Server) - Extended Update Support
+                     dotNET on RHEL Beta (for RHEL Server)
+                     Red Hat Developer Toolset (for RHEL for IBM POWER)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server)
+                     RHEL for SAP Applications for Power BE
+                     Red Hat Developer Tools (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Server - Update Services for SAP Solutions
+                     Oracle Java (for RHEL Compute Node) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Workstation)
+                     Red Hat Enterprise Linux Desktop
+                     Red Hat Software Test Suite 5 (for RHEL Server)
+                     Red Hat Enterprise Linux for IBM z Systems - Extended Update Support
+                     RHEL for SAP HANA - Extended Update Support
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections (for RHEL Client)
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support (for IBM z Systems)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server)
+                     Red Hat Software Collections (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux for Power, little endian - Extended Update Support
+                     Red Hat Software Collections (for RHEL Server)
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL for IBM POWER)
+                     Red Hat Developer Tools Beta (for RHEL Server)
+                     Red Hat Developer Tools Beta (for RHEL Server for ARM)
+                     Red Hat Beta
+                     Red Hat Enterprise Linux Server - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server for IBM Power)
+                     Oracle Java (for RHEL Server)
+                     Red Hat Enterprise Linux for Real Time
+                     Red Hat Enterprise Linux Atomic Host
+                     Red Hat Developer Toolset (for RHEL Workstation)
+                     Red Hat Enterprise Linux High Availabilty (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux for Scientific Computing
+                     Red Hat Enterprise Linux for IBM System z (Structure A) Beta
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE) - Extended Update Support
+                     Red Hat Container Images Beta
+                     Red Hat Enterprise Linux for Power 9 Beta
+                     Red Hat Developer Toolset (for RHEL Server EUS)
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Availability (for RHEL Server)
+                     Red Hat Certification (for RHEL Server)
+                     RHEL for SAP Applications for System Z EUS
+                     Red Hat Software Collections Beta (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux Workstation
+                     Red Hat Enterprise Linux for SAP
+                     MRG Realtime
+                     Red Hat EUCJP Support (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Compute Node)
+                     Red Hat Container Images
+                     Red Hat Enterprise Linux Resilient Storage (for IBM z Systems)
+                     Red Hat Enterprise Linux Server (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power LE)
+                     Red Hat Certificate System
+                     Red Hat S-JIS Support (for RHEL Server) - Extended Update Support
+                     RHEL for SAP Applications for Power BE EUS
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Server for ARM)
+                     Red Hat S-JIS Support (for RHEL Server)
+                     Red Hat Enterprise Linux Resilient Storage (for RHEL Server) - Extended Update Support
+                     Red Hat Software Collections Beta (for RHEL Server for IBM Power)
+                     Red Hat Enterprise Linux Atomic Host Beta
+                     Red Hat Developer Tools (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Server for System Z)
+                     Red Hat Enterprise Linux High Availability (for RHEL Server) - Extended Update Support
+                     Red Hat Developer Tools (for RHEL Server)
+                     Red Hat Directory Server
+                     Red Hat Enterprise Linux Server - Extended Life Cycle Support
+                     Red Hat Software Collections (for RHEL Server for ARM)
+                     RHEL for SAP HANA for Power LE
+                     RHEL for SAP Applications for System Z
+                     Red Hat Software Collections (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM z Systems
+                     RHEL for SAP (for IBM Power LE) - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Resilient Storage (for IBM Power LE)
+                     RHEL for SAP Applications for Power LE EUS
+                     RHEL for SAP - Update Services for SAP Solutions
+                     Red Hat Enterprise Linux Load Balancer (for RHEL Server)
+                     Red Hat Enterprise Linux High Availability - Update Services for SAP Solutions
+                     Red Hat Hardware Certification Test Suite
+                     Red Hat Developer Toolset (for RHEL Server)
+                     Red Hat Software Collections Beta (for RHEL Workstation)
+                     Red Hat Software Collections (for RHEL Workstation)
+                     RHEL for SAP - Extended Update Support
+                     Oracle Java (for RHEL Workstation)
+                     Red Hat Enterprise Linux for SAP Hana
+                     Oracle Java (for RHEL Compute Node)
+                     Red Hat Enterprise Linux for Power, big endian
+                     Red Hat Enterprise Linux High Performance Networking (for RHEL Server) - Extended Update Support
+                     Red Hat Enterprise Linux for Power 9
+                     Red Hat Developer Tools Beta (for RHEL Server for IBM Power LE)
+                     dotNET on RHEL (for RHEL Server)
+                     RHEL for SAP HANA - Update Services for SAP Solutions
+                     RHEL for SAP HANA for Power LE EUS
+                     Red Hat Enterprise Linux High Availability (for IBM Power LE) - Extended Update Support
+                     Red Hat Ansible Engine
+                     Red Hat Developer Tools (for RHEL Server for IBM Power LE)
+                     Red Hat Enterprise Linux for IBM System z (Structure A)
+                     Red Hat Software Collections Beta (for RHEL Client)
+                     Red Hat Enterprise Linux Scalable File System (for RHEL Compute Node)
+                     Red Hat Enterprise Linux Server
+                     Red Hat Software Collections Beta (for RHEL Server)
+                     RHEL for SAP HANA (for IBM Power LE) - Update Services for SAP Solutions
+                     RHEL for SAP Applications for Power LE
+                     Red Hat Developer Tools Beta (for RHEL Workstation)
+SKU:                 RH3387200
+Contract:            11660497
+Pool ID:             2c908401643b3d4a01643b48d5861741
+Provides Management: No
+Available:           500
+Suggested:           1
+Service Level:       Self-Support
+Service Type:        L1-L3
+Subscription Type:   Standard (Temporary)
+Ends:                18/04/2019
+System Type:         Virtual
+
+2018-07-09 17:39:57,891 p=20158 u=ravi |  playbook: update_yum.yml
+2018-07-09 17:40:05,761 p=20168 u=ravi |  PLAY [update software] ***************************************************************************************************
+2018-07-09 17:40:05,768 p=20168 u=ravi |  TASK [yum update] ********************************************************************************************************
+2018-07-09 17:42:24,754 p=20168 u=ravi |  changed: [dn1]
+2018-07-09 17:42:25,698 p=20168 u=ravi |  changed: [dn2]
+2018-07-09 17:42:28,505 p=20168 u=ravi |  changed: [nn1]
+2018-07-09 17:42:28,506 p=20168 u=ravi |  PLAY RECAP ***************************************************************************************************************
+2018-07-09 17:42:28,506 p=20168 u=ravi |  dn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:42:28,506 p=20168 u=ravi |  dn2                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:42:28,507 p=20168 u=ravi |  nn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 17:55:31,187 p=21321 u=ravi |   [WARNING]: Consider using the get_url or uri module rather than running wget.  If you need to use command because
+get_url or uri is insufficient you can add warn=False to this command task or set command_warnings=False in ansible.cfg
+to get rid of this message.
+
+2018-07-09 17:55:31,187 p=21321 u=ravi |  nn1 | SUCCESS | rc=0 >>
+2018-07-09 02:55:31 URL:http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.6.3.0/hdp.repo [575/575] -> "hdp.repo" [1]
+
+2018-07-09 17:55:31,217 p=21321 u=ravi |  dn1 | SUCCESS | rc=0 >>
+2018-07-09 02:55:31 URL:http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.6.3.0/hdp.repo [575/575] -> "hdp.repo" [1]
+
+2018-07-09 17:55:31,241 p=21321 u=ravi |  dn2 | SUCCESS | rc=0 >>
+2018-07-09 02:55:31 URL:http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.6.3.0/hdp.repo [575/575] -> "hdp.repo" [1]
+
+2018-07-09 17:56:04,748 p=21414 u=ravi |  dn1 | SUCCESS | rc=0 >>
+dn1.ravi.local
+
+2018-07-09 17:56:04,756 p=21414 u=ravi |  dn2 | SUCCESS | rc=0 >>
+dn2.ravi.local
+
+2018-07-09 17:56:04,776 p=21414 u=ravi |  nn1 | SUCCESS | rc=0 >>
+nn1.ravi.local
+
+2018-07-09 17:56:32,675 p=21472 u=ravi |   [WARNING]: Consider using the yum module rather than running yum.  If you need to use command because yum is
+insufficient you can add warn=False to this command task or set command_warnings=False in ansible.cfg to get rid of this
+message.
+
+2018-07-09 17:56:32,676 p=21472 u=ravi |  nn1 | FAILED | rc=1 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Is this ok [y/d/N]: Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2018-07-09.02-56.twt6rx.yumtxNot using downloaded rhel-7-server-rpms/repomd.xml because it is older than what we have:
+  Current   : Sun Jul  8 23:55:25 2018
+  Downloaded: Sun Jul  8 23:52:45 2018non-zero return code
+
+2018-07-09 17:56:32,762 p=21472 u=ravi |  dn1 | FAILED | rc=1 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Is this ok [y/d/N]: Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2018-07-09.02-56.X_ezYE.yumtxnon-zero return code
+
+2018-07-09 17:56:32,798 p=21472 u=ravi |  dn2 | FAILED | rc=1 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Is this ok [y/d/N]: Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2018-07-09.02-56.0Msmh1.yumtxnon-zero return code
+
+2018-07-09 17:56:45,333 p=21515 u=ravi |   [WARNING]: Consider using the yum module rather than running yum.  If you need to use command because yum is
+insufficient you can add warn=False to this command task or set command_warnings=False in ansible.cfg to get rid of this
+message.
+
+2018-07-09 17:56:45,334 p=21515 u=ravi |  dn1 | SUCCESS | rc=0 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              861 kB/s | 701 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : autogen-libopts-5.18-5.el7.x86_64                            1/3 
+  Installing : ntpdate-4.2.6p5-28.el7.x86_64                                2/3 
+  Installing : ntp-4.2.6p5-28.el7.x86_64                                    3/3 
+  Verifying  : ntpdate-4.2.6p5-28.el7.x86_64                                1/3 
+  Verifying  : ntp-4.2.6p5-28.el7.x86_64                                    2/3 
+  Verifying  : autogen-libopts-5.18-5.el7.x86_64                            3/3 
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.el7                                                   
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.el7      ntpdate.x86_64 0:4.2.6p5-28.el7     
+
+Complete!
+
+2018-07-09 17:56:45,401 p=21515 u=ravi |  nn1 | SUCCESS | rc=0 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              678 kB/s | 701 kB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : autogen-libopts-5.18-5.el7.x86_64                            1/3 
+  Installing : ntpdate-4.2.6p5-28.el7.x86_64                                2/3 
+  Installing : ntp-4.2.6p5-28.el7.x86_64                                    3/3 
+  Verifying  : ntpdate-4.2.6p5-28.el7.x86_64                                1/3 
+  Verifying  : ntp-4.2.6p5-28.el7.x86_64                                    2/3 
+  Verifying  : autogen-libopts-5.18-5.el7.x86_64                            3/3 
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.el7                                                   
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.el7      ntpdate.x86_64 0:4.2.6p5-28.el7     
+
+Complete!Not using downloaded rhel-7-server-rpms/repomd.xml because it is older than what we have:
+  Current   : Sun Jul  8 23:55:25 2018
+  Downloaded: Sun Jul  8 23:52:45 2018
+
+2018-07-09 17:56:45,762 p=21515 u=ravi |  dn2 | SUCCESS | rc=0 >>
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Processing Dependency: ntpdate = 4.2.6p5-28.el7 for package: ntp-4.2.6p5-28.el7.x86_64
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.el7.x86_64
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.el7 will be installed
+---> Package ntpdate.x86_64 0:4.2.6p5-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version            Repository              Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.el7     rhel-7-server-rpms     549 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.el7         rhel-7-server-rpms      66 k
+ ntpdate             x86_64     4.2.6p5-28.el7     rhel-7-server-rpms      86 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 701 k
+Installed size: 1.6 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              686 kB/s | 701 kB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : autogen-libopts-5.18-5.el7.x86_64                            1/3 
+  Installing : ntpdate-4.2.6p5-28.el7.x86_64                                2/3 
+  Installing : ntp-4.2.6p5-28.el7.x86_64                                    3/3 
+  Verifying  : ntpdate-4.2.6p5-28.el7.x86_64                                1/3 
+  Verifying  : ntp-4.2.6p5-28.el7.x86_64                                    2/3 
+  Verifying  : autogen-libopts-5.18-5.el7.x86_64                            3/3 
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.el7                                                   
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.el7      ntpdate.x86_64 0:4.2.6p5-28.el7     
+
+Complete!
+
+2018-07-09 17:57:09,421 p=21582 u=ravi |  dn2 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:09,429 p=21582 u=ravi |  dn1 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:09,429 p=21582 u=ravi |  nn1 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:24,841 p=21626 u=ravi |  dn2 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:24,849 p=21626 u=ravi |  nn1 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:24,885 p=21626 u=ravi |  dn1 | FAILED | rc=1 >>
+Failed to execute operation: No such file or directorynon-zero return code
+
+2018-07-09 17:57:39,845 p=21676 u=ravi |  dn1 | FAILED | rc=4 >>
+Unit ntp.service could not be found.non-zero return code
+
+2018-07-09 17:57:39,846 p=21676 u=ravi |  dn2 | FAILED | rc=4 >>
+Unit ntp.service could not be found.non-zero return code
+
+2018-07-09 17:57:39,848 p=21676 u=ravi |  nn1 | FAILED | rc=4 >>
+Unit ntp.service could not be found.non-zero return code
+
+2018-07-09 17:57:42,685 p=21713 u=ravi |  dn2 | FAILED | rc=3 >>
+● ntpd.service - Network Time Service
+   Loaded: loaded (/usr/lib/systemd/system/ntpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)non-zero return code
+
+2018-07-09 17:57:42,688 p=21713 u=ravi |  dn1 | FAILED | rc=3 >>
+● ntpd.service - Network Time Service
+   Loaded: loaded (/usr/lib/systemd/system/ntpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)non-zero return code
+
+2018-07-09 17:57:42,696 p=21713 u=ravi |  nn1 | FAILED | rc=3 >>
+● ntpd.service - Network Time Service
+   Loaded: loaded (/usr/lib/systemd/system/ntpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)non-zero return code
+
+2018-07-09 17:57:50,866 p=21753 u=ravi |  nn1 | SUCCESS | rc=0 >>
+
+
+2018-07-09 17:57:50,901 p=21753 u=ravi |  dn1 | SUCCESS | rc=0 >>
+
+
+2018-07-09 17:57:50,929 p=21753 u=ravi |  dn2 | SUCCESS | rc=0 >>
+
+
+2018-07-09 17:57:56,558 p=21814 u=ravi |  dn1 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+
+2018-07-09 17:57:56,561 p=21814 u=ravi |  nn1 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+
+2018-07-09 17:57:56,561 p=21814 u=ravi |  dn2 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+
+2018-07-09 18:00:51,621 p=22027 u=ravi |  PLAY [selinux modification] **********************************************************************************************
+2018-07-09 18:00:51,628 p=22027 u=ravi |  TASK [selinux disable] ***************************************************************************************************
+2018-07-09 18:00:52,559 p=22027 u=ravi |  changed: [dn2]
+2018-07-09 18:00:52,568 p=22027 u=ravi |  changed: [nn1]
+2018-07-09 18:00:52,581 p=22027 u=ravi |  changed: [dn1]
+2018-07-09 18:00:52,582 p=22027 u=ravi |  PLAY RECAP ***************************************************************************************************************
+2018-07-09 18:00:52,582 p=22027 u=ravi |  dn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 18:00:52,582 p=22027 u=ravi |  dn2                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 18:00:52,582 p=22027 u=ravi |  nn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-07-09 18:01:06,006 p=22101 u=ravi |  nn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Shared connection to 127.0.0.1 closed.\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:01:06,153 p=22101 u=ravi |  dn2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Shared connection to 127.0.0.1 closed.\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:01:06,205 p=22101 u=ravi |  dn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Shared connection to 127.0.0.1 closed.\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:09,399 p=22217 u=ravi |  nn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:09,400 p=22217 u=ravi |  dn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:09,401 p=22217 u=ravi |  dn2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:12,575 p=22237 u=ravi |  dn2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:12,576 p=22237 u=ravi |  dn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:03:12,578 p=22237 u=ravi |  nn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:44,135 p=22311 u=ravi |  dn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:44,135 p=22311 u=ravi |  nn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:44,136 p=22311 u=ravi |  dn2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:45,854 p=22335 u=ravi |  dn2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:45,855 p=22335 u=ravi |  dn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:04:45,858 p=22335 u=ravi |  nn1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh_exchange_identification: Connection closed by remote host\r\n", 
+    "unreachable": true
+}
+2018-07-09 18:10:17,782 p=22607 u=ravi |  dn1 | SUCCESS | rc=0 >>
+Disabled
+
+2018-07-09 18:10:17,789 p=22607 u=ravi |  dn2 | SUCCESS | rc=0 >>
+Disabled
+
+2018-07-09 18:10:17,797 p=22607 u=ravi |  nn1 | SUCCESS | rc=0 >>
+Disabled
+
+2018-07-09 18:15:07,630 p=22856 u=ravi |  dn2 | SUCCESS | rc=0 >>
+
+
+2018-07-09 18:15:07,669 p=22856 u=ravi |  nn1 | SUCCESS | rc=0 >>
+
+
+2018-07-09 18:15:07,669 p=22856 u=ravi |  dn1 | SUCCESS | rc=0 >>
+
+
+2018-07-09 18:15:13,518 p=22913 u=ravi |  nn1 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/firewalld.service to /dev/null.
+
+2018-07-09 18:15:13,529 p=22913 u=ravi |  dn2 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/firewalld.service to /dev/null.
+
+2018-07-09 18:15:13,529 p=22913 u=ravi |  dn1 | SUCCESS | rc=0 >>
+Created symlink from /etc/systemd/system/firewalld.service to /dev/null.
+
+2018-07-20 14:28:14,662 p=21315 u=ravi |  PLAY [install base] ***************************************************************************
+2018-07-20 14:28:14,707 p=21315 u=ravi |  TASK [Gathering Facts] ************************************************************************
+2018-07-20 14:28:16,072 p=21315 u=ravi |  ok: [nn1]
+2018-07-20 14:28:16,078 p=21315 u=ravi |  ok: [dn2]
+2018-07-20 14:28:16,121 p=21315 u=ravi |  ok: [dn1]
+2018-07-20 14:28:16,132 p=21315 u=ravi |  TASK [shell] **********************************************************************************
+2018-07-20 14:28:16,849 p=21315 u=ravi |   [ERROR]: User interrupted execution
+
+2018-07-20 14:28:39,554 p=21425 u=ravi |  PLAY [install base] ***************************************************************************
+2018-07-20 14:28:39,588 p=21425 u=ravi |  TASK [Gathering Facts] ************************************************************************
+2018-07-20 14:28:40,543 p=21425 u=ravi |  ok: [nn1]
+2018-07-20 14:28:40,587 p=21425 u=ravi |  ok: [dn2]
+2018-07-20 14:28:40,594 p=21425 u=ravi |  ok: [dn1]
+2018-07-20 14:28:40,604 p=21425 u=ravi |  TASK [shell] **********************************************************************************
+2018-07-20 14:28:42,563 p=21425 u=ravi |  changed: [dn2]
+2018-07-20 14:28:42,771 p=21425 u=ravi |  changed: [nn1]
+2018-07-20 14:28:42,918 p=21425 u=ravi |  changed: [dn1]
+2018-07-20 14:28:42,927 p=21425 u=ravi |  TASK [shell] **********************************************************************************
+2018-07-20 14:28:48,886 p=21425 u=ravi |  changed: [nn1]
+2018-07-20 14:28:48,998 p=21425 u=ravi |  changed: [dn2]
+2018-07-20 14:28:49,438 p=21425 u=ravi |  changed: [dn1]
+2018-07-20 14:28:49,448 p=21425 u=ravi |  TASK [shell] **********************************************************************************
+2018-07-20 14:28:53,926 p=21425 u=ravi |  changed: [dn1]
+2018-07-20 14:28:53,995 p=21425 u=ravi |  changed: [nn1]
+2018-07-20 14:28:54,058 p=21425 u=ravi |  changed: [dn2]
+2018-07-20 14:28:54,059 p=21425 u=ravi |  PLAY RECAP ************************************************************************************
+2018-07-20 14:28:54,059 p=21425 u=ravi |  dn1                        : ok=4    changed=3    unreachable=0    failed=0   
+2018-07-20 14:28:54,059 p=21425 u=ravi |  dn2                        : ok=4    changed=3    unreachable=0    failed=0   
+2018-07-20 14:28:54,059 p=21425 u=ravi |  nn1                        : ok=4    changed=3    unreachable=0    failed=0   
+2018-07-20 14:29:55,408 p=21665 u=ravi |  PLAY [install base] ***************************************************************************
+2018-07-20 14:29:55,441 p=21665 u=ravi |  TASK [Gathering Facts] ************************************************************************
+2018-07-20 14:29:56,754 p=21665 u=ravi |  ok: [dn2]
+2018-07-20 14:29:56,761 p=21665 u=ravi |  ok: [dn1]
+2018-07-20 14:29:56,777 p=21665 u=ravi |  ok: [nn1]
+2018-07-20 14:29:56,785 p=21665 u=ravi |  TASK [command] ********************************************************************************
+2018-07-20 14:29:58,615 p=21665 u=ravi |   [WARNING]: Consider using the yum module rather than running yum.  If you need to use command
+because yum is insufficient you can add warn=False to this command task or set
+command_warnings=False in ansible.cfg to get rid of this message.
+
+2018-07-20 14:29:58,615 p=21665 u=ravi |  changed: [nn1]
+2018-07-20 14:30:11,231 p=21665 u=ravi |  changed: [dn2]
+2018-07-20 14:30:29,167 p=21665 u=ravi |  changed: [dn1]
+2018-07-20 14:30:29,168 p=21665 u=ravi |  PLAY RECAP ************************************************************************************
+2018-07-20 14:30:29,169 p=21665 u=ravi |  dn1                        : ok=2    changed=1    unreachable=0    failed=0   
+2018-07-20 14:30:29,169 p=21665 u=ravi |  dn2                        : ok=2    changed=1    unreachable=0    failed=0   
+2018-07-20 14:30:29,169 p=21665 u=ravi |  nn1                        : ok=2    changed=1    unreachable=0    failed=0   
+2018-07-23 11:33:51,563 p=18998 u=ravi |  playbook: insight.yml
+2018-07-23 11:33:56,900 p=19012 u=ravi |  PLAY [insight client install and register] ********************************************************************************************************
+2018-07-23 11:33:56,912 p=19012 u=ravi |  TASK [insight install] ****************************************************************************************************************************
+2018-07-23 11:34:04,342 p=19012 u=ravi |  ok: [dn1]
+2018-07-23 11:34:22,298 p=19012 u=ravi |  changed: [dn2]
+2018-07-23 11:34:24,078 p=19012 u=ravi |  changed: [nn1]
+2018-07-23 11:34:24,083 p=19012 u=ravi |  TASK [register] ***********************************************************************************************************************************
+2018-07-23 11:34:37,702 p=19012 u=ravi |  changed: [dn1]
+2018-07-23 11:34:42,481 p=19012 u=ravi |  changed: [nn1]
+2018-07-23 11:34:43,314 p=19012 u=ravi |  changed: [dn2]
+2018-07-23 11:34:43,315 p=19012 u=ravi |  PLAY RECAP ****************************************************************************************************************************************
+2018-07-23 11:34:43,315 p=19012 u=ravi |  dn1                        : ok=2    changed=1    unreachable=0    failed=0   
+2018-07-23 11:34:43,315 p=19012 u=ravi |  dn2                        : ok=2    changed=2    unreachable=0    failed=0   
+2018-07-23 11:34:43,315 p=19012 u=ravi |  nn1                        : ok=2    changed=2    unreachable=0    failed=0   
+2018-07-25 17:18:15,385 p=15912 u=ravi |  PLAY [insight client install and register] ************************************************
+2018-07-25 17:18:15,392 p=15912 u=ravi |  TASK [insight install] ********************************************************************
+2018-07-25 17:18:16,366 p=15912 u=ravi |  fatal: [dn1]: FAILED! => {"changed": false, "msg": "unknown url type: www.google.com"}
+2018-07-25 17:18:16,373 p=15912 u=ravi |  fatal: [dn2]: FAILED! => {"changed": false, "msg": "unknown url type: www.google.com"}
+2018-07-25 17:18:16,382 p=15912 u=ravi |  fatal: [nn1]: FAILED! => {"changed": false, "msg": "unknown url type: www.google.com"}
+2018-07-25 17:18:16,383 p=15912 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/uri.retry
+
+2018-07-25 17:18:16,383 p=15912 u=ravi |  PLAY RECAP ********************************************************************************
+2018-07-25 17:18:16,383 p=15912 u=ravi |  dn1                        : ok=0    changed=0    unreachable=0    failed=1   
+2018-07-25 17:18:16,383 p=15912 u=ravi |  dn2                        : ok=0    changed=0    unreachable=0    failed=1   
+2018-07-25 17:18:16,383 p=15912 u=ravi |  nn1                        : ok=0    changed=0    unreachable=0    failed=1   
+2018-07-25 17:19:07,769 p=15993 u=ravi |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/home/ravi/Documents/vag_hortonworks/uri.yml': line 9, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+              url: "http://www.google.com"
+        return_content: yes
+        ^ here
+
+2018-07-25 17:19:24,903 p=16011 u=ravi |  PLAY [insight client install and register] ************************************************
+2018-07-25 17:19:24,910 p=16011 u=ravi |  TASK [insight install] ********************************************************************
+2018-07-25 17:19:25,042 p=16011 u=ravi |  fatal: [localost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname localost: Name or service not known\r\n", "unreachable": true}
+2018-07-25 17:19:25,043 p=16011 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/uri.retry
+
+2018-07-25 17:19:25,043 p=16011 u=ravi |  PLAY RECAP ********************************************************************************
+2018-07-25 17:19:25,043 p=16011 u=ravi |  localost                   : ok=0    changed=0    unreachable=1    failed=0   
+2018-07-25 17:19:37,882 p=16026 u=ravi |  PLAY [insight client install and register] ************************************************
+2018-07-25 17:19:37,889 p=16026 u=ravi |  TASK [insight install] ********************************************************************
+2018-07-25 17:19:39,029 p=16026 u=ravi |  ok: [nn1]
+2018-07-25 17:19:39,031 p=16026 u=ravi |  ok: [dn2]
+2018-07-25 17:19:39,032 p=16026 u=ravi |  ok: [dn1]
+2018-07-25 17:19:39,039 p=16026 u=ravi |  TASK [register] ***************************************************************************
+2018-07-25 17:19:39,079 p=16026 u=ravi |  fatal: [dn1]: FAILED! => {"changed": false, "msg": "Failed as requested from task"}
+2018-07-25 17:19:39,087 p=16026 u=ravi |  fatal: [dn2]: FAILED! => {"changed": false, "msg": "Failed as requested from task"}
+2018-07-25 17:19:39,096 p=16026 u=ravi |  fatal: [nn1]: FAILED! => {"changed": false, "msg": "Failed as requested from task"}
+2018-07-25 17:19:39,098 p=16026 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/uri.retry
+
+2018-07-25 17:19:39,098 p=16026 u=ravi |  PLAY RECAP ********************************************************************************
+2018-07-25 17:19:39,098 p=16026 u=ravi |  dn1                        : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-25 17:19:39,098 p=16026 u=ravi |  dn2                        : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-25 17:19:39,098 p=16026 u=ravi |  nn1                        : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-25 17:19:48,832 p=16094 u=ravi |  PLAY [insight client install and register] ************************************************
+2018-07-25 17:19:48,838 p=16094 u=ravi |  TASK [insight install] ********************************************************************
+2018-07-25 17:19:49,704 p=16094 u=ravi |  ok: [localhost]
+2018-07-25 17:19:49,706 p=16094 u=ravi |  TASK [register] ***************************************************************************
+2018-07-25 17:19:49,734 p=16094 u=ravi |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed as requested from task"}
+2018-07-25 17:19:49,735 p=16094 u=ravi |  	to retry, use: --limit @/home/ravi/Documents/vag_hortonworks/uri.retry
+
+2018-07-25 17:19:49,735 p=16094 u=ravi |  PLAY RECAP ********************************************************************************
+2018-07-25 17:19:49,735 p=16094 u=ravi |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-12-26 11:49:18,356 p=2799 u=ravi |   [WARNING]: Could not match supplied host pattern, ignoring: list
+
+2018-12-26 11:49:18,356 p=2799 u=ravi |   [WARNING]: No hosts matched, nothing to do
+
+2018-12-26 11:49:18,358 p=2799 u=ravi |  ERROR! No argument passed to command module
+2018-12-26 11:49:34,921 p=2818 u=ravi |  ERROR! Missing target hosts
+2018-12-26 11:49:41,858 p=2842 u=ravi |    hosts (3):
+2018-12-26 11:49:41,858 p=2842 u=ravi |      nn1.ravi.local
+2018-12-26 11:49:41,858 p=2842 u=ravi |      dn1.ravi.local
+2018-12-26 11:49:41,858 p=2842 u=ravi |      dn2.ravi.local
+2018-12-26 11:49:48,709 p=2845 u=ravi |  dn2.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 2233: Connection refused\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:49:48,771 p=2845 u=ravi |  dn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '[127.0.0.1]:2232' (ECDSA) to the list of known hosts.\r\nno such identity: /home/ravi/.vagrant/machines/dn1/virtualbox/private_key: No such file or directory\r\nvagrant@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:49:49,195 p=2845 u=ravi |  nn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '[127.0.0.1]:2230' (ECDSA) to the list of known hosts.\r\nno such identity: /home/ravi/.vagrant/machines/nn1/virtualbox/private_key: No such file or directory\r\nvagrant@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:51:47,342 p=3126 u=ravi |  nn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '[127.0.0.1]:2230' (ECDSA) to the list of known hosts.\r\nno such identity: /home/ravi/.vagrant/machines/nn1/virtualbox/private_key: No such file or directory\r\nvagrant@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:51:47,348 p=3126 u=ravi |  dn2.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '[127.0.0.1]:2232' (ECDSA) to the list of known hosts.\r\nno such identity: /home/ravi/.vagrant/machines/dnd/virtualbox/private_key: No such file or directory\r\nvagrant@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:51:47,591 p=3126 u=ravi |  dn1.ravi.local | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '[127.0.0.1]:2231' (ECDSA) to the list of known hosts.\r\nno such identity: /home/ravi/.vagrant/machines/dn1/virtualbox/private_key: No such file or directory\r\nvagrant@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-12-26 11:52:51,565 p=3182 u=ravi |   [WARNING]: Could not match supplied host pattern, ignoring: nn1
+
+2018-12-26 11:52:51,565 p=3182 u=ravi |   [WARNING]: No hosts matched, nothing to do
+
+2018-12-26 11:52:58,982 p=3197 u=ravi |  nn1.ravi.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-12-26 11:54:34,506 p=3260 u=ravi |  dn1.ravi.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-12-26 11:54:34,606 p=3260 u=ravi |  dn2.ravi.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-12-26 11:54:34,989 p=3260 u=ravi |  nn1.ravi.local | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-12-26 11:56:51,319 p=3407 u=ravi |  PLAY [hostfile modification] ***************************************************************************************************************************
+2018-12-26 11:56:51,325 p=3407 u=ravi |  TASK [host file addendum] ******************************************************************************************************************************
+2018-12-26 11:56:52,151 p=3407 u=ravi |  changed: [dn2.ravi.local]
+2018-12-26 11:56:52,162 p=3407 u=ravi |  changed: [dn1.ravi.local]
+2018-12-26 11:56:52,166 p=3407 u=ravi |  changed: [nn1.ravi.local]
+2018-12-26 11:56:52,167 p=3407 u=ravi |  PLAY RECAP *********************************************************************************************************************************************
+2018-12-26 11:56:52,167 p=3407 u=ravi |  dn1.ravi.local             : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 11:56:52,167 p=3407 u=ravi |  dn2.ravi.local             : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 11:56:52,167 p=3407 u=ravi |  nn1.ravi.local             : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 11:57:08,047 p=3459 u=ravi |  dn1.ravi.local | CHANGED | rc=0 >>
+127.0.0.1	dn1.ravi.local	dn1
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 11:57:08,061 p=3459 u=ravi |  nn1.ravi.local | CHANGED | rc=0 >>
+127.0.0.1	nn1.ravi.local	nn1
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 11:57:08,074 p=3459 u=ravi |  dn2.ravi.local | CHANGED | rc=0 >>
+127.0.0.1	dn2.ravi.local	dn2
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 11:58:19,551 p=3531 u=ravi |  dn1.ravi.local | FAILED! => {
+    "changed": false, 
+    "msg": "line is required with state=present"
+}
+2018-12-26 11:59:14,322 p=3644 u=ravi |  dn1.ravi.local | SUCCESS => {
+    "backup": "", 
+    "changed": false, 
+    "found": 0, 
+    "msg": ""
+}
+2018-12-26 11:59:38,244 p=3688 u=ravi |  ERROR! Extraneous options or arguments
+2018-12-26 12:00:00,102 p=3711 u=ravi |  dn1.ravi.local | SUCCESS => {
+    "backup": "", 
+    "changed": false, 
+    "found": 0, 
+    "msg": ""
+}
+2018-12-26 12:01:13,963 p=3895 u=ravi |  dn1.ravi.local | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "found": 1, 
+    "msg": "1 line(s) removed"
+}
+2018-12-26 12:01:26,041 p=3944 u=ravi |   [WARNING]: Could not match supplied host pattern, ignoring: dn1
+
+2018-12-26 12:01:26,041 p=3944 u=ravi |   [WARNING]: No hosts matched, nothing to do
+
+2018-12-26 12:01:45,226 p=3961 u=ravi |  dn1 | CHANGED | rc=0 >>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 12:02:16,150 p=3987 u=ravi |  dn2 | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "found": 1, 
+    "msg": "1 line(s) removed"
+}
+2018-12-26 12:02:28,078 p=4015 u=ravi |  nn1 | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "found": 1, 
+    "msg": "1 line(s) removed"
+}
+2018-12-26 12:02:34,826 p=4037 u=ravi |  dn2 | CHANGED | rc=0 >>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 12:02:34,833 p=4037 u=ravi |  dn1 | CHANGED | rc=0 >>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 12:02:34,842 p=4037 u=ravi |  nn1 | CHANGED | rc=0 >>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.5.120 nn1.ravi.local  nn1
+192.168.5.121 dn1.ravi.local  dn1
+192.168.5.122 dn2.ravi.local  dn2
+# END ANSIBLE MANAGED BLOCK
+
+2018-12-26 12:06:04,188 p=4927 u=ravi |  PLAY [selinux modification] ****************************************************************************************************************************
+2018-12-26 12:06:04,196 p=4927 u=ravi |  TASK [selinux disable] *********************************************************************************************************************************
+2018-12-26 12:06:05,215 p=4927 u=ravi |  changed: [nn1]
+2018-12-26 12:06:05,219 p=4927 u=ravi |  changed: [dn2]
+2018-12-26 12:06:05,247 p=4927 u=ravi |  changed: [dn1]
+2018-12-26 12:06:05,249 p=4927 u=ravi |  PLAY RECAP *********************************************************************************************************************************************
+2018-12-26 12:06:05,249 p=4927 u=ravi |  dn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 12:06:05,249 p=4927 u=ravi |  dn2                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 12:06:05,249 p=4927 u=ravi |  nn1                        : ok=1    changed=1    unreachable=0    failed=0   
+2018-12-26 12:06:36,074 p=4996 u=ravi |  dn2 | CHANGED | rc=0 >>
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected. 
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+2018-12-26 12:06:36,094 p=4996 u=ravi |  nn1 | CHANGED | rc=0 >>
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected. 
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+2018-12-26 12:06:36,110 p=4996 u=ravi |  dn1 | CHANGED | rc=0 >>
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected. 
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+2018-12-26 12:06:58,700 p=5051 u=ravi |  dn1 | CHANGED | rc=0 >>
+Permissive
+
+2018-12-26 12:06:58,778 p=5051 u=ravi |  dn2 | CHANGED | rc=0 >>
+Permissive
+
+2018-12-26 12:06:58,798 p=5051 u=ravi |  nn1 | CHANGED | rc=0 >>
+Permissive
+
+2018-12-26 12:09:29,355 p=5357 u=ravi |  ERROR! Extraneous options or arguments
+2018-12-26 12:10:31,542 p=5405 u=ravi |  ERROR! Extraneous options or arguments
+2018-12-26 12:10:52,569 p=5412 u=ravi |  nn1 | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "msg": "line replaced"
+}
+2018-12-26 12:10:52,582 p=5412 u=ravi |  dn1 | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "msg": "line replaced"
+}
+2018-12-26 12:10:52,898 p=5412 u=ravi |  dn2 | CHANGED => {
+    "backup": "", 
+    "changed": true, 
+    "msg": "line replaced"
+}
+2018-12-26 12:11:14,391 p=5468 u=ravi |  dn1 | CHANGED | rc=0 >>
+#	$OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:04 naddy Exp $
+
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/bin:/usr/bin
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
+
+# If you want to change the port on a SELinux system, you have to tell
+# SELinux about this change.
+# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+#
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Ciphers and keying
+#RekeyLimit default none
+
+# Logging
+#SyslogFacility AUTH
+SyslogFacility AUTHPRIV
+#LogLevel INFO
+
+# Authentication:
+
+#LoginGraceTime 2m
+#PermitRootLogin yes
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+#PubkeyAuthentication yes
+
+# The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+# but this is overridden so installations will only check .ssh/authorized_keys
+AuthorizedKeysFile	.ssh/authorized_keys
+
+#AuthorizedPrincipalsFile none
+
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
+
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+#HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
+
+# To disable tunneled clear text passwords, change to no here!
+#PasswordAuthentication yes
+#PermitEmptyPasswords no
+PasswordAuthentication yes
+
+# Change to no to disable s/key passwords
+#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+#KerberosUseKuserok yes
+
+# GSSAPI options
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+#GSSAPIEnablek5users no
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+# WARNING: 'UsePAM no' is not supported in Red Hat Enterprise Linux and may cause several
+# problems.
+UsePAM yes
+
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+#PrintMotd yes
+#PrintLastLog yes
+#TCPKeepAlive yes
+#UseLogin no
+#UsePrivilegeSeparation sandbox
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#ShowPatchLevel no
+#UseDNS yes
+UseDNS no
+#PidFile /var/run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
+
+# no default banner path
+#Banner none
+
+# Accept locale-related environment variables
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+
+# override default of no subsystems
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#	X11Forwarding no
+#	AllowTcpForwarding no
+#	PermitTTY no
+#	ForceCommand cvs server
+
+2018-12-26 12:11:14,395 p=5468 u=ravi |  dn2 | CHANGED | rc=0 >>
+#	$OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:04 naddy Exp $
+
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/bin:/usr/bin
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
+
+# If you want to change the port on a SELinux system, you have to tell
+# SELinux about this change.
+# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+#
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Ciphers and keying
+#RekeyLimit default none
+
+# Logging
+#SyslogFacility AUTH
+SyslogFacility AUTHPRIV
+#LogLevel INFO
+
+# Authentication:
+
+#LoginGraceTime 2m
+#PermitRootLogin yes
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+#PubkeyAuthentication yes
+
+# The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+# but this is overridden so installations will only check .ssh/authorized_keys
+AuthorizedKeysFile	.ssh/authorized_keys
+
+#AuthorizedPrincipalsFile none
+
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
+
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+#HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
+
+# To disable tunneled clear text passwords, change to no here!
+#PasswordAuthentication yes
+#PermitEmptyPasswords no
+PasswordAuthentication yes
+
+# Change to no to disable s/key passwords
+#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+#KerberosUseKuserok yes
+
+# GSSAPI options
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+#GSSAPIEnablek5users no
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+# WARNING: 'UsePAM no' is not supported in Red Hat Enterprise Linux and may cause several
+# problems.
+UsePAM yes
+
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+#PrintMotd yes
+#PrintLastLog yes
+#TCPKeepAlive yes
+#UseLogin no
+#UsePrivilegeSeparation sandbox
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#ShowPatchLevel no
+#UseDNS yes
+UseDNS no
+#PidFile /var/run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
+
+# no default banner path
+#Banner none
+
+# Accept locale-related environment variables
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+
+# override default of no subsystems
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#	X11Forwarding no
+#	AllowTcpForwarding no
+#	PermitTTY no
+#	ForceCommand cvs server
+
+2018-12-26 12:11:14,406 p=5468 u=ravi |  nn1 | CHANGED | rc=0 >>
+#	$OpenBSD: sshd_config,v 1.100 2016/08/15 12:32:04 naddy Exp $
+
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/bin:/usr/bin
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
+
+# If you want to change the port on a SELinux system, you have to tell
+# SELinux about this change.
+# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+#
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Ciphers and keying
+#RekeyLimit default none
+
+# Logging
+#SyslogFacility AUTH
+SyslogFacility AUTHPRIV
+#LogLevel INFO
+
+# Authentication:
+
+#LoginGraceTime 2m
+#PermitRootLogin yes
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+#PubkeyAuthentication yes
+
+# The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+# but this is overridden so installations will only check .ssh/authorized_keys
+AuthorizedKeysFile	.ssh/authorized_keys
+
+#AuthorizedPrincipalsFile none
+
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
+
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+#HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
+
+# To disable tunneled clear text passwords, change to no here!
+#PasswordAuthentication yes
+#PermitEmptyPasswords no
+PasswordAuthentication yes
+
+# Change to no to disable s/key passwords
+#ChallengeResponseAuthentication yes
+ChallengeResponseAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+#KerberosUseKuserok yes
+
+# GSSAPI options
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+#GSSAPIEnablek5users no
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+# WARNING: 'UsePAM no' is not supported in Red Hat Enterprise Linux and may cause several
+# problems.
+UsePAM yes
+
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+#PrintMotd yes
+#PrintLastLog yes
+#TCPKeepAlive yes
+#UseLogin no
+#UsePrivilegeSeparation sandbox
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#ShowPatchLevel no
+#UseDNS yes
+UseDNS no
+#PidFile /var/run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
+
+# no default banner path
+#Banner none
+
+# Accept locale-related environment variables
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+
+# override default of no subsystems
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#	X11Forwarding no
+#	AllowTcpForwarding no
+#	PermitTTY no
+#	ForceCommand cvs server
+
+2018-12-26 12:11:36,601 p=5521 u=ravi |  nn1 | CHANGED | rc=0 >>
+
+
+2018-12-26 12:11:36,606 p=5521 u=ravi |  dn2 | CHANGED | rc=0 >>
+
+
+2018-12-26 12:11:36,610 p=5521 u=ravi |  dn1 | CHANGED | rc=0 >>
+
+
+2018-12-26 12:15:28,434 p=5829 u=ravi |  dn1 | CHANGED | rc=0 >>
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+   Active: active (running) since Wed 2018-12-26 04:15:27 UTC; 10ms ago
+     Docs: man:firewalld(1)
+ Main PID: 3165 (firewalld)
+   CGroup: /system.slice/firewalld.service
+           ├─3165 /usr/bin/python -Es /usr/sbin/firewalld --nofork --nopid
+           └─3166 /usr/sbin/iptables -w -L -n
+
+Dec 26 04:15:27 dn1.ravi.local systemd[1]: Starting firewalld - dynamic firewall daemon...
+Dec 26 04:15:27 dn1.ravi.local systemd[1]: Started firewalld - dynamic firewall daemon.
+
+2018-12-26 12:15:28,473 p=5829 u=ravi |  dn2 | CHANGED | rc=0 >>
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+   Active: active (running) since Wed 2018-12-26 04:15:27 UTC; 17ms ago
+     Docs: man:firewalld(1)
+ Main PID: 2891 (firewalld)
+   CGroup: /system.slice/firewalld.service
+           ├─2891 /usr/bin/python -Es /usr/sbin/firewalld --nofork --nopid
+           └─2892 /usr/sbin/iptables -w -L -n
+
+Dec 26 04:15:27 dn2.ravi.local systemd[1]: Starting firewalld - dynamic firewall daemon...
+Dec 26 04:15:27 dn2.ravi.local systemd[1]: Started firewalld - dynamic firewall daemon.
+
+2018-12-26 12:15:28,809 p=5829 u=ravi |  nn1 | CHANGED | rc=0 >>
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+   Active: active (running) since Wed 2018-12-26 04:15:27 UTC; 16ms ago
+     Docs: man:firewalld(1)
+ Main PID: 3292 (firewalld)
+   CGroup: /system.slice/firewalld.service
+           └─3292 /usr/bin/python -Es /usr/sbin/firewalld --nofork --nopid
+
+Dec 26 04:15:27 nn1.ravi.local systemd[1]: Starting firewalld - dynamic firewall daemon...
+Dec 26 04:15:27 nn1.ravi.local systemd[1]: Started firewalld - dynamic firewall daemon.
+
+2018-12-26 12:17:36,996 p=5972 u=ravi |  nn1 | CHANGED | rc=0 >>
+success
+success
+
+2018-12-26 12:17:37,042 p=5972 u=ravi |  dn2 | CHANGED | rc=0 >>
+success
+success
+
+2018-12-26 12:17:37,090 p=5972 u=ravi |  dn1 | CHANGED | rc=0 >>
+success
+success
+
+2018-12-26 12:19:08,727 p=6249 u=ravi |  nn1 | CHANGED | rc=0 >>
+trusted (active)
+  target: ACCEPT
+  icmp-block-inversion: no
+  interfaces: 
+  sources: 192.168.5.120 192.168.5.121 192.168.5.122
+  services: 
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	
+
+2018-12-26 12:19:08,804 p=6249 u=ravi |  dn1 | CHANGED | rc=0 >>
+trusted (active)
+  target: ACCEPT
+  icmp-block-inversion: no
+  interfaces: 
+  sources: 192.168.5.120 192.168.5.121 192.168.5.122
+  services: 
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	
+
+2018-12-26 12:19:08,901 p=6249 u=ravi |  dn2 | CHANGED | rc=0 >>
+trusted (active)
+  target: ACCEPT
+  icmp-block-inversion: no
+  interfaces: 
+  sources: 192.168.5.120 192.168.5.121 192.168.5.122
+  services: 
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	
+
+2018-12-26 12:25:38,395 p=6702 u=ravi |   [WARNING]: Consider using the yum module rather than running yum.  If you need to use command because yum is insufficient you can add warn=False to
+this command task or set command_warnings=False in ansible.cfg to get rid of this message.
+
+2018-12-26 12:25:38,395 p=6702 u=ravi |  nn1 | CHANGED | rc=0 >>
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.0x.sg
+ * extras: mirror.0x.sg
+ * updates: mirror.0x.sg
+Package chrony-3.2-2.el7.x86_64 already installed and latest version
+Nothing to do
+
+2018-12-26 12:25:41,518 p=6702 u=ravi |  dn2 | CHANGED | rc=0 >>
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: mirror.0x.sg
+ * extras: mirror.0x.sg
+ * updates: mirror.0x.sg
+Package chrony-3.2-2.el7.x86_64 already installed and latest version
+Nothing to do
+
+2018-12-26 12:25:41,846 p=6702 u=ravi |  dn1 | CHANGED | rc=0 >>
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: mirror.qoxy.com
+ * extras: mirror.qoxy.com
+ * updates: mirror.qoxy.com
+Package chrony-3.2-2.el7.x86_64 already installed and latest version
+Nothing to do
+
+2018-12-26 12:26:12,212 p=6760 u=ravi |  dn2 | CHANGED | rc=0 >>
+enabled
+active
+
+2018-12-26 12:26:12,243 p=6760 u=ravi |  dn1 | CHANGED | rc=0 >>
+enabled
+active
+
+2018-12-26 12:26:12,243 p=6760 u=ravi |  nn1 | CHANGED | rc=0 >>
+enabled
+active
+
+2018-12-26 12:28:55,590 p=7088 u=ravi |  nn1 | CHANGED | rc=0 >>
+success
+success
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: eth0 eth1
+  sources: 
+  services: ssh dhcpv6-client
+  ports: 8080/tcp
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 
+	
+
+2019-01-02 10:55:36,590 p=8588 u=ravi |  playbook: playbook.yml
+2019-01-02 10:56:28,248 p=10292 u=ravi |  PLAY [all] *********************************************************************
+2019-01-02 10:56:28,254 p=10292 u=ravi |  TASK [Gathering Facts] *********************************************************
+2019-01-02 10:56:29,354 p=10292 u=ravi |  ok: [master]
+2019-01-02 10:56:29,368 p=10292 u=ravi |  TASK [ensure ntpd is at the latest version] ************************************
+2019-01-02 10:56:33,790 p=10292 u=ravi |  ok: [master]
+2019-01-02 10:56:33,809 p=10292 u=ravi |  TASK [disble firewall] *********************************************************
+2019-01-02 10:56:34,366 p=10292 u=ravi |  ok: [master]
+2019-01-02 10:56:34,376 p=10292 u=ravi |  TASK [disable selinux] *********************************************************
+2019-01-02 10:56:35,026 p=10292 u=ravi |   [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'.
+State change will take effect next reboot.
+
+2019-01-02 10:56:35,027 p=10292 u=ravi |  changed: [master]
+2019-01-02 10:56:35,028 p=10292 u=ravi |  PLAY RECAP *********************************************************************
+2019-01-02 10:56:35,028 p=10292 u=ravi |  master                     : ok=4    changed=1    unreachable=0    failed=0   
+2019-01-02 10:57:17,054 p=11919 u=ravi |  PLAY [all] *********************************************************************
+2019-01-02 10:57:17,059 p=11919 u=ravi |  TASK [Gathering Facts] *********************************************************
+2019-01-02 10:57:18,222 p=11919 u=ravi |  ok: [node1]
+2019-01-02 10:57:18,233 p=11919 u=ravi |  TASK [ensure ntpd is at the latest version] ************************************
+2019-01-02 10:57:22,074 p=11919 u=ravi |  ok: [node1]
+2019-01-02 10:57:22,085 p=11919 u=ravi |  TASK [disble firewall] *********************************************************
+2019-01-02 10:57:22,558 p=11919 u=ravi |  ok: [node1]
+2019-01-02 10:57:22,569 p=11919 u=ravi |  TASK [disable selinux] *********************************************************
+2019-01-02 10:57:23,215 p=11919 u=ravi |   [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'.
+State change will take effect next reboot.
+
+2019-01-02 10:57:23,216 p=11919 u=ravi |  changed: [node1]
+2019-01-02 10:57:23,217 p=11919 u=ravi |  PLAY RECAP *********************************************************************
+2019-01-02 10:57:23,217 p=11919 u=ravi |  node1                      : ok=4    changed=1    unreachable=0    failed=0   
+2019-01-02 10:58:06,521 p=13587 u=ravi |  PLAY [all] *********************************************************************
+2019-01-02 10:58:06,527 p=13587 u=ravi |  TASK [Gathering Facts] *********************************************************
+2019-01-02 10:58:08,042 p=13587 u=ravi |  ok: [node2]
+2019-01-02 10:58:08,053 p=13587 u=ravi |  TASK [ensure ntpd is at the latest version] ************************************
+2019-01-02 10:58:12,658 p=13587 u=ravi |  ok: [node2]
+2019-01-02 10:58:12,668 p=13587 u=ravi |  TASK [disble firewall] *********************************************************
+2019-01-02 10:58:13,155 p=13587 u=ravi |  ok: [node2]
+2019-01-02 10:58:13,165 p=13587 u=ravi |  TASK [disable selinux] *********************************************************
+2019-01-02 10:58:13,819 p=13587 u=ravi |   [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'.
+State change will take effect next reboot.
+
+2019-01-02 10:58:13,819 p=13587 u=ravi |  changed: [node2]
+2019-01-02 10:58:13,821 p=13587 u=ravi |  PLAY RECAP *********************************************************************
+2019-01-02 10:58:13,821 p=13587 u=ravi |  node2                      : ok=4    changed=1    unreachable=0    failed=0   
+2019-01-02 10:59:38,150 p=13952 u=ravi |  node2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-02 10:59:38,162 p=13952 u=ravi |  node1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-02 10:59:38,164 p=13952 u=ravi |  master | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}

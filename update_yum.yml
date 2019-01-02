@@ -1,0 +1,9 @@
+---
+- name: update software 
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: yum update
+      yum:
+        name: "*"
+        state: latest

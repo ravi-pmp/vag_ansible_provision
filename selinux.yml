@@ -1,0 +1,11 @@
+---
+- name: selinux modification
+  hosts: all 
+  gather_facts: no
+  tasks:
+    - name: selinux disable
+      lineinfile:
+        path: /etc/selinux/config
+        regexp: '^SELINUX='
+        line: 'SELINUX=disabled'
+

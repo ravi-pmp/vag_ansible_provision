@@ -1,0 +1,13 @@
+---
+- name: hostfile modification
+  hosts: all 
+  gather_facts: no
+  tasks:
+    - name: host file addendum
+      blockinfile:
+        path: /etc/hosts
+        block: |
+          192.168.5.120 nn1.ravi.local  nn1
+          192.168.5.121 dn1.ravi.local  dn1
+          192.168.5.122 dn2.ravi.local  dn2
+
